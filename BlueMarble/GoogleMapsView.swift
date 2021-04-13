@@ -28,7 +28,7 @@ struct MapView: UIViewRepresentable {
     func makeUIView(context: Self.Context) -> GMSMapView {
         
         // Just default the camera to anywhere - this will be overwritten when GPS coordinates received.
-        let camera = GMSCameraPosition.camera(withLatitude: 0, longitude: 0, zoom: 13.0)
+        let camera = GMSCameraPosition.camera(withLatitude: 42.643890, longitude: -87.85278, zoom: 13.0)
         let mapView = GMSMapView.map(withFrame: CGRect.zero, camera: camera)
         mapView.setMinZoom(14, maxZoom: 20)
         
