@@ -13,6 +13,8 @@
 		D88A263C2607D5CF009256F3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D88A263B2607D5CF009256F3 /* ContentView.swift */; };
 		D88A263E2607D5D0009256F3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D88A263D2607D5D0009256F3 /* Assets.xcassets */; };
 		D88A26412607D5D0009256F3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D88A26402607D5D0009256F3 /* Preview Assets.xcassets */; };
+		D8C819F42626030700816F05 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D8C819F32626030700816F05 /* GoogleService-Info.plist */; };
+		D8C819F926260B0200816F05 /* Geotags.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8C819F826260B0200816F05 /* Geotags.swift */; };
 		D8E1A9BB260C2240003E471B /* GoogleMapsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8E1A9BA260C2240003E471B /* GoogleMapsView.swift */; };
 /* End PBXBuildFile section */
 
@@ -25,6 +27,8 @@
 		D88A263D2607D5D0009256F3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D88A26402607D5D0009256F3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		D88A26422607D5D0009256F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D8C819F32626030700816F05 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		D8C819F826260B0200816F05 /* Geotags.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Geotags.swift; path = ../../../../../Geotags.swift; sourceTree = "<group>"; };
 		D8E1A9BA260C2240003E471B /* GoogleMapsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleMapsView.swift; sourceTree = "<group>"; };
 		DCEA44470A01174FE6D87661 /* Pods-BlueMarble.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BlueMarble.release.xcconfig"; path = "Target Support Files/Pods-BlueMarble/Pods-BlueMarble.release.xcconfig"; sourceTree = "<group>"; };
 		E613F5B047D646F242893967 /* Pods_BlueMarble.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BlueMarble.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -80,6 +84,8 @@
 		D88A26382607D5CF009256F3 /* BlueMarble */ = {
 			isa = PBXGroup;
 			children = (
+				D8C819F726260AE000816F05 /* Models */,
+				D8C819F32626030700816F05 /* GoogleService-Info.plist */,
 				D88A26392607D5CF009256F3 /* BlueMarbleApp.swift */,
 				D88A263B2607D5CF009256F3 /* ContentView.swift */,
 				D88A263D2607D5D0009256F3 /* Assets.xcassets */,
@@ -97,6 +103,14 @@
 				D88A26402607D5D0009256F3 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		D8C819F726260AE000816F05 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D8C819F826260B0200816F05 /* Geotags.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -161,6 +175,7 @@
 			files = (
 				D88A26412607D5D0009256F3 /* Preview Assets.xcassets in Resources */,
 				D88A263E2607D5D0009256F3 /* Assets.xcassets in Resources */,
+				D8C819F42626030700816F05 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -232,6 +247,7 @@
 			files = (
 				D80A505926251A7600E06298 /* LocationManager.swift in Sources */,
 				D8E1A9BB260C2240003E471B /* GoogleMapsView.swift in Sources */,
+				D8C819F926260B0200816F05 /* Geotags.swift in Sources */,
 				D88A263C2607D5CF009256F3 /* ContentView.swift in Sources */,
 				D88A263A2607D5CF009256F3 /* BlueMarbleApp.swift in Sources */,
 			);

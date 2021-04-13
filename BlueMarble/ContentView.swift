@@ -12,19 +12,26 @@ struct ContentView: View {
     var body: some View { 
 
         
-        
+        // Need a tab view for bottom navigation
         TabView {
             
+            // MapView -- Google Maps rendering screen
             MapView()
                 .edgesIgnoringSafeArea(.all)
                 //.padding()
+                
+                // Map button
                 .tabItem {
                     Image(systemName: "map")
                     Text("Map")
                 }
                 .tag(1)
+            
+            // Placeholder for the news screen
             Text("Second View")
                 .padding()
+                
+                // New button
                 .tabItem {
                     Image(systemName: "newspaper")
                     Text("News")
@@ -35,11 +42,9 @@ struct ContentView: View {
     
 }
 
-
-//struct MapView:  View {
-
-//}
-
+/*
+ Preview the ContentView()
+ */
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()

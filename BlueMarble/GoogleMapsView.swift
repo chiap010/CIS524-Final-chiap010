@@ -18,6 +18,7 @@ import GoogleMaps
 
 struct MapView: UIViewRepresentable {
     
+    // Just some tester markers until I can connect markers to Firebase
     let marker1 : GMSMarker = GMSMarker()
     let marker2 : GMSMarker = GMSMarker()
     
@@ -31,6 +32,7 @@ struct MapView: UIViewRepresentable {
         let mapView = GMSMapView.map(withFrame: CGRect.zero, camera: camera)
         mapView.setMinZoom(14, maxZoom: 20)
         
+        // Updating settings to mapView
         mapView.settings.compassButton = true
         mapView.isMyLocationEnabled = true
         mapView.settings.myLocationButton = true
@@ -40,6 +42,7 @@ struct MapView: UIViewRepresentable {
         mapView.settings.tiltGestures = true
         mapView.isIndoorEnabled = false
         
+        // Return the UIViewRepresentable
         return mapView
     }
     
@@ -51,6 +54,7 @@ struct MapView: UIViewRepresentable {
             print("User's location: \(myLocation)")
         }
         
+        // Some test markers for now to see how this works
         marker1.position = CLLocationCoordinate2D(latitude: 42.645201, longitude: -87.856591)
         marker1.title = "Title"
         marker1.snippet = "Snippet"

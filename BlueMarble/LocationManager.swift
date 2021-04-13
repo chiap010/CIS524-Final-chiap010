@@ -6,10 +6,6 @@
 //
 
 
-// https://www.hackingwithswift.com/100/swiftui/78
-//https://stackoverflow.com/questions/58346305/how-to-focus-google-maps-camera-on-users-current-location-at-startup-using-swif
-
-
 import CoreLocation
 
 class LocationManager: NSObject, CLLocationManagerDelegate, ObservableObject {
@@ -24,14 +20,15 @@ class LocationManager: NSObject, CLLocationManagerDelegate, ObservableObject {
         self.manager.startUpdatingLocation()
     }
 
+    // If the status is authorized, have the manager call startUpdatinglocation()
     func locationManager(_ manager: CLLocationManager, didChangeAuthorization status: CLAuthorizationStatus) {
         if status == .authorizedWhenInUse {
             self.manager.startUpdatingLocation()
         }
     }
 
+    // Notify listeners that the user has a new location
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
-        // Notify listeners that the user has a new location
         self.lastKnownLocation = locations.last
     }
 }
