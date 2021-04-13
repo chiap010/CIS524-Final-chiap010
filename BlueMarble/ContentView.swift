@@ -20,14 +20,14 @@ struct ContentView: View {
                 //.padding()
                 .tabItem {
                     Image(systemName: "map")
-                    //Text("Map")
+                    Text("Map")
                 }
                 .tag(1)
             Text("Second View")
                 .padding()
                 .tabItem {
                     Image(systemName: "newspaper")
-                    //Text("News")
+                    Text("News")
                 }
                 .tag(2)
         }

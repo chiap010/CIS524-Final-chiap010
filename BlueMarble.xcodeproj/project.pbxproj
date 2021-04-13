@@ -111,6 +111,7 @@
 				D88A26332607D5CF009256F3 /* Frameworks */,
 				D88A26342607D5CF009256F3 /* Resources */,
 				A13C86AD80C30E49B5D01AF4 /* [CP] Copy Pods Resources */,
+				54ABB083EAE9AB6F0E34830F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -166,6 +167,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		54ABB083EAE9AB6F0E34830F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BlueMarble/Pods-BlueMarble-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BlueMarble/Pods-BlueMarble-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BlueMarble/Pods-BlueMarble-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		6771C2E70C3E62DEB4CC8ADE /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;

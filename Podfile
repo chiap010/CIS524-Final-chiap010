@@ -7,5 +7,8 @@ target 'BlueMarble' do
 
   # Pods for BlueMarble
   pod "GoogleMaps"
+  
+  pod 'Firebase/Auth'
+  pod 'Firebase/Firestore'
 
 end
