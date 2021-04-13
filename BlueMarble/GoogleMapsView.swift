@@ -12,39 +12,41 @@ import GoogleMaps
 //
 //// 42.64389021399087   -87.85278701871134
 //
+//https://www.andyibanez.com/posts/using-corelocation-with-swiftui/
 //
-//
-struct MapView: UIViewRepresentable {
-    
-    //@ObservedObject var locationViewModel = LocationViewModel()
-    //@StateObject var locationViewModel = LocationViewModel()
-    
-    let manager = CLLocationManager()
-    let marker : GMSMarker = GMSMarker()
-    
-    
+import SwiftUI
+import GoogleMaps
+import Combine
 
-    //    /// Creates a `UIView` instance to be presented.
+struct HomeView: UIViewRepresentable {
+
+    // Listen to changes on the locationManager
+    @ObservedObject var locationManager = LocationManager()
+
     func makeUIView(context: Self.Context) -> GMSMapView {
 
-        let camera = GMSCameraPosition.camera(withLatitude: 42.64389021, longitude: -87.85278701, zoom: 13.0)
+        // Just default the camera to anywhere (this will be overwritten as soon as myLocation is grabbed
+        let camera = GMSCameraPosition.camera(withLatitude: 0, longitude: 0, zoom: 16.0)
         let mapView = GMSMapView.map(withFrame: CGRect.zero, camera: camera)
-        
+        mapView.setMinZoom(14, maxZoom: 20)
+        mapView.settings.compassButton = true
+        mapView.isMyLocationEnabled = true
+        mapView.settings.myLocationButton = true
+        mapView.settings.scrollGestures = true
+        mapView.settings.zoomGestures = true
+        mapView.settings.rotateGestures = true
+        mapView.settings.tiltGestures = true
+        mapView.isIndoorEnabled = false
+
         return mapView
     }
 
-    //    /// Updates the presented `UIView` (and coordinator) to the latest
-    //    /// configuration.
     func updateUIView(_ mapView: GMSMapView, context: Self.Context) {
-        // Creates a marker in the center of the map.
 
-        marker.position = CLLocationCoordinate2D(latitude: 42.64389021, longitude: -87.85278701)
-        //marker.title = "Sydney"
-        //marker.snippet = "Australia"
-        marker.map = mapView
+        // When the locationManager publishes updates, respond to them
+        if let myLocation = locationManager.lastKnownLocation {
+            mapView.animate(toLocation: myLocation.coordinate)
+            print("User's location: \(myLocation)")
+        }
     }
-    
 }
-
-
-

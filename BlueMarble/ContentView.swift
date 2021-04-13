@@ -15,7 +15,7 @@ struct ContentView: View {
         
         TabView {
             
-            MapView()
+            HomeView()
                 .edgesIgnoringSafeArea(.all)
                 //.padding()
                 .tabItem {

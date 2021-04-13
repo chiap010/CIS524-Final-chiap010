@@ -23,127 +23,17 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "63E063ED-D430-4B03-B297-CB8397D7A72D"
+            uuid = "92EFDC51-48F7-4469-AA4A-6A848FD9CB54"
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "BlueMarble/GoogleMapsView.swift"
+            filePath = "BlueMarble/LocationFetcher.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "23"
-            endingLineNumber = "23"
-            landmarkName = "MapView"
-            landmarkType = "14">
-            <Locations>
-               <Location
-                  uuid = "63E063ED-D430-4B03-B297-CB8397D7A72D - e050cd4a04aa442e"
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "BlueMarble.MapView.init(locationViewModel: @autoclosure () -&gt; BlueMarble.LocationViewModel) -&gt; BlueMarble.MapView"
-                  moduleName = "BlueMarble"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/tommychiapete/Documents/Projects/CIS524-Final-chiap010/BlueMarble/GoogleMapsView.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "20"
-                  endingLineNumber = "20"
-                  offsetFromSymbolStart = "32">
-               </Location>
-               <Location
-                  uuid = "63E063ED-D430-4B03-B297-CB8397D7A72D - 252b576ed73990d4"
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "BlueMarble.MapView.init() -&gt; BlueMarble.MapView"
-                  moduleName = "BlueMarble"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/tommychiapete/Documents/Projects/CIS524-Final-chiap010/BlueMarble/GoogleMapsView.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "20"
-                  endingLineNumber = "20"
-                  offsetFromSymbolStart = "112">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "93C96132-6473-4BD5-965E-668F35A0245C"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "BlueMarble/GoogleMapsView.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "20"
-            endingLineNumber = "20"
-            landmarkName = "MapView"
-            landmarkType = "14">
-            <Locations>
-               <Location
-                  uuid = "93C96132-6473-4BD5-965E-668F35A0245C - 846f93425baeedfe"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "property wrapper backing initializer of BlueMarble.MapView.locationViewModel : BlueMarble.LocationViewModel"
-                  moduleName = "BlueMarble"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/tommychiapete/Documents/Projects/CIS524-Final-chiap010/BlueMarble/GoogleMapsView.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "20"
-                  endingLineNumber = "20"
-                  offsetFromSymbolStart = "27">
-               </Location>
-               <Location
-                  uuid = "93C96132-6473-4BD5-965E-668F35A0245C - f6249c62aa104a65"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "BlueMarble.MapView.locationViewModel.getter : BlueMarble.LocationViewModel"
-                  moduleName = "BlueMarble"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/tommychiapete/Documents/Projects/CIS524-Final-chiap010/BlueMarble/GoogleMapsView.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "20"
-                  endingLineNumber = "20"
-                  offsetFromSymbolStart = "155">
-               </Location>
-               <Location
-                  uuid = "93C96132-6473-4BD5-965E-668F35A0245C - 1cb73345a5e5cc13"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "BlueMarble.MapView.$locationViewModel.getter : SwiftUI.ObservedObject&lt;BlueMarble.LocationViewModel&gt;.Wrapper"
-                  moduleName = "BlueMarble"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/tommychiapete/Documents/Projects/CIS524-Final-chiap010/BlueMarble/GoogleMapsView.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "20"
-                  endingLineNumber = "20"
-                  offsetFromSymbolStart = "155">
-               </Location>
-               <Location
-                  uuid = "93C96132-6473-4BD5-965E-668F35A0245C - 252b576ed73990d4"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "BlueMarble.MapView.init() -&gt; BlueMarble.MapView"
-                  moduleName = "BlueMarble"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/tommychiapete/Documents/Projects/CIS524-Final-chiap010/BlueMarble/GoogleMapsView.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "20"
-                  endingLineNumber = "20"
-                  offsetFromSymbolStart = "24">
-               </Location>
-            </Locations>
+            startingLineNumber = "30"
+            endingLineNumber = "30"
+            landmarkName = "locationManager(_:didUpdateLocations:)"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

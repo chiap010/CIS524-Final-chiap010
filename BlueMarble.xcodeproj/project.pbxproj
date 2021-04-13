@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		6876D3A4DFD3DA7DC22C9C61 /* Pods_BlueMarble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E613F5B047D646F242893967 /* Pods_BlueMarble.framework */; };
-		D80A505926251A7600E06298 /* LocationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D80A505826251A7600E06298 /* LocationViewModel.swift */; };
+		D80A505926251A7600E06298 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D80A505826251A7600E06298 /* LocationManager.swift */; };
 		D88A263A2607D5CF009256F3 /* BlueMarbleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D88A26392607D5CF009256F3 /* BlueMarbleApp.swift */; };
 		D88A263C2607D5CF009256F3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D88A263B2607D5CF009256F3 /* ContentView.swift */; };
 		D88A263E2607D5D0009256F3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D88A263D2607D5D0009256F3 /* Assets.xcassets */; };
@@ -18,7 +18,7 @@
 
 /* Begin PBXFileReference section */
 		882663E09E541B7C37ED2889 /* Pods-BlueMarble.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BlueMarble.debug.xcconfig"; path = "Target Support Files/Pods-BlueMarble/Pods-BlueMarble.debug.xcconfig"; sourceTree = "<group>"; };
-		D80A505826251A7600E06298 /* LocationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationViewModel.swift; sourceTree = "<group>"; };
+		D80A505826251A7600E06298 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 		D88A26362607D5CF009256F3 /* BlueMarble.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BlueMarble.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D88A26392607D5CF009256F3 /* BlueMarbleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlueMarbleApp.swift; sourceTree = "<group>"; };
 		D88A263B2607D5CF009256F3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -86,7 +86,7 @@
 				D88A26422607D5D0009256F3 /* Info.plist */,
 				D88A263F2607D5D0009256F3 /* Preview Content */,
 				D8E1A9BA260C2240003E471B /* GoogleMapsView.swift */,
-				D80A505826251A7600E06298 /* LocationViewModel.swift */,
+				D80A505826251A7600E06298 /* LocationManager.swift */,
 			);
 			path = BlueMarble;
 			sourceTree = "<group>";
@@ -212,7 +212,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D80A505926251A7600E06298 /* LocationViewModel.swift in Sources */,
+				D80A505926251A7600E06298 /* LocationManager.swift in Sources */,
 				D8E1A9BB260C2240003E471B /* GoogleMapsView.swift in Sources */,
 				D88A263C2607D5CF009256F3 /* ContentView.swift in Sources */,
 				D88A263A2607D5CF009256F3 /* BlueMarbleApp.swift in Sources */,
